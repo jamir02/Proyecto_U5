@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'users',
     'pagos',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
