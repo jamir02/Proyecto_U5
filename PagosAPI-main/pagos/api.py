@@ -10,7 +10,7 @@ class PagoViewSet(viewsets.ModelViewSet):
     serializer_class = PagoSerializer
     pagination_class = StandardResultsSetPagination
     filter_backends = [filters.SearchFilter]
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     search_fields = ['fecha_pago']
     throttle_scope = 'pagos'
